@@ -7,11 +7,13 @@ class Entity
 {
 public:
 
-	Entity() {};
+	Entity(): position(0,0,0) {};
     Model *model;
 	GLuint textureId;
 
-	void draw();
+	Vector3f position;
+
+	void Draw();
 
 private:
 
