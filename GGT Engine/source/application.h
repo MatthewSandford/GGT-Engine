@@ -1,4 +1,6 @@
 #pragma once
+
+#include "camera.h"
 #include "renderer.h"
 
 class Application
@@ -16,6 +18,7 @@ public:
 
 private:
 
+	Camera camera;
 	sf::RenderWindow window;
     Renderer renderer;
 };

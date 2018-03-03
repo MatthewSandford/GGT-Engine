@@ -5,6 +5,7 @@
 #include <gl/GLU.h>﻿
 
 Application::Application(Json::Value& config) : window({ config["window_size"]["width"].asUInt(), config["window_size"]["height"].asUInt() }, config["window_name"].asCString()),
+												camera(config["window_size"]["width"].asUInt(), config["window_size"]["height"].asUInt()),
 												closing(false)
 {
 	window.setFramerateLimit(config["max_frame_rate"].asUInt());
@@ -59,16 +60,11 @@ void Application::Init()
 void Application::Display()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
 
 	sf::Vector2u wsize = window.getSize();
 	glViewport(0, 0, wsize.x, wsize.y);
-	gluPerspective(60, (float)wsize.x / (float)wsize.y, 0.1f, 512.f);
 
-	glPushMatrix();
-	glTranslatef(0.f, 0.f, -5.f);
-
+	camera.Update();
 	renderer.Render();
 
 	window.display();
