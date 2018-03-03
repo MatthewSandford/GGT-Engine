@@ -7,9 +7,9 @@ Model::Model(std::string fileName)
 
 void Model::LoadModel(std::string fileName)
 {
-    std::vector<sf::Vector3f> positions;
+    std::vector<Vector3f> positions;
     std::vector<sf::Vector2f> texcoords;
-    std::vector<sf::Vector3f> normals;
+    std::vector<Vector3f> normals;
     std::vector<FaceData> temp_faces;
 
     std::ifstream fileStream;
@@ -30,7 +30,7 @@ void Model::LoadModel(std::string fileName)
 
         if (type_str == "v")
         {
-            sf::Vector3f position;
+            Vector3f position;
             str_stream >> position.x >> position.y >> position.z;
             positions.push_back(position);
         }
@@ -42,7 +42,7 @@ void Model::LoadModel(std::string fileName)
         }
         else if (type_str == "vn")
         {
-            sf::Vector3f normal;
+            Vector3f normal;
             str_stream >> normal.x >> normal.y >> normal.z;
             normals.push_back(normal);
         }

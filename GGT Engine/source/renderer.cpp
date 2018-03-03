@@ -10,7 +10,7 @@ void Renderer::Render()
 {
     for (Entity* entity : entityVector)
     {
-		entity->draw();
+		entity->Draw();
     }
 }
 

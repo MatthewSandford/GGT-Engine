@@ -6,13 +6,14 @@
 #include <fstream>
 #include <vector>
 #include <iostream>
+#include "vector3f.h"
 
 class Face
 {
 public:
 
-	std::vector<sf::Vector3f> vertexPositions;
-	std::vector<sf::Vector3f> vertexNormals;
+	std::vector<Vector3f> vertexPositions;
+	std::vector<Vector3f> vertexNormals;
 	std::vector<sf::Vector2f> vertexTexcoords;
 
 };
