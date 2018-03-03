@@ -18,7 +18,7 @@ public:
 
 private:
 
-	Camera camera;
+	Camera camera; 
 	sf::RenderWindow window;
     Renderer renderer;
 };
