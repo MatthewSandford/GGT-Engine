@@ -1,0 +1,8 @@
+{
+  "window_size": {
+    "width": 1024,
+    "height" : 769
+  },
+  "window_name": "GGT Engine",
+  "max_frame_ratre" :  60
+}

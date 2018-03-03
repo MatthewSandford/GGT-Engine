@@ -1,0 +1,8 @@
+{
+  "models": [
+    {
+      "name": "CUBE",
+      "path": "assets/cube.obj"
+    }
+  ]
+}

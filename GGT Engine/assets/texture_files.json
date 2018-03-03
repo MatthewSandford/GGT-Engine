@@ -1,0 +1,8 @@
+{
+  "models": [
+    {
+      "name": "BALL",
+      "path": "assets/ball.bmp"
+    }
+  ]
+}
