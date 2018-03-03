@@ -21,25 +21,29 @@
   <ItemGroup>
     <ClCompile Include="..\externals\jsoncpp\jsoncpp.cpp" />
     <ClCompile Include="source\application.cpp" />
+    <ClCompile Include="source\camera.cpp" />
     <ClCompile Include="source\entity.cpp" />
-    <ClCompile Include="source\gameapplication.cpp" />
     <ClCompile Include="source\jsonhandler.cpp" />
     <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\matrix.cpp" />
     <ClCompile Include="source\model.cpp" />
     <ClCompile Include="source\modelmanager.cpp" />
     <ClCompile Include="source\renderer.cpp" />
     <ClCompile Include="source\texturemanager.cpp" />
+    <ClCompile Include="source\vector3f.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\application.h" />
+    <ClInclude Include="source\camera.h" />
     <ClInclude Include="source\entity.h" />
-    <ClInclude Include="source\gameapplication.h" />
     <ClInclude Include="source\jsonhandler.h" />
     <ClInclude Include="source\logger.h" />
+    <ClInclude Include="source\matrix.h" />
     <ClInclude Include="source\model.h" />
     <ClInclude Include="source\modelmanager.h" />
     <ClInclude Include="source\renderer.h" />
     <ClInclude Include="source\texturemanager.h" />
+    <ClInclude Include="source\vector3f.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\ball.bmp" />

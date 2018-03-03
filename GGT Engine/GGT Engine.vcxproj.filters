@@ -21,13 +21,7 @@
     <ClCompile Include="source\entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\gameapplication.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="source\jsonhandler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\model.cpp">
@@ -45,15 +39,24 @@
     <ClCompile Include="..\externals\jsoncpp\jsoncpp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vector3f.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\application.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="source\entity.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\gameapplication.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="source\jsonhandler.h">
@@ -72,6 +75,15 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="source\texturemanager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\camera.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\matrix.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vector3f.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
